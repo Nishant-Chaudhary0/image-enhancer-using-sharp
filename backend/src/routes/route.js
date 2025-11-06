@@ -7,8 +7,6 @@ import path from "path";
 const uploadDir = path.join(process.cwd(), "uploads");
 const route = express.Router();
 
-let name = "testing";
-
 route.post("/upload", upload.single("file"), async (req, res) => {
   console.log("File received:", req.file);
   try {
