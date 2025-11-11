@@ -13,7 +13,8 @@ services:
   frontend:
     build:
       context: ./frontend
-      dockerfile: Dockerfile
+      args:
+        - VITE_API_URL= http://3.26.242.54:3000/api
     container_name: imageEnhancer-frontend
     restart: always
     ports:
