@@ -34,6 +34,7 @@ function FileUpload() {
 
   return (
     <div style={{ padding: '20px' }}>
+    <h1>Image enhancer</h1>
       <input type="file" onChange={(e) => setFile(e.target.files[0])} />
       <button onClick={handleUpload}>Upload</button>
 
